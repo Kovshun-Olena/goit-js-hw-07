@@ -34,11 +34,13 @@ const navItemEl = document.createElement("li");
 navItemEl.classList.add("img-gallery");
 console.log(navItemEl);
 
-
-function createMarcup(arr) {
-  return arr.map ((images) => `
+function createMarcup(images) {
+  return images.map ((images) => `
   <li class = "img-gallery">
-  <img src = "${images.url}" alt = "${images.alt}" />
+  <img src = "${images.url}" 
+  alt = "${images.alt}"
+  width = "360px"
+  heigth = "300px" />
   </li>
   `).join("");
 }
@@ -47,6 +49,4 @@ conteiner.style.display = "flex";
 conteiner.style.flexWrap = "wrap";
 conteiner.style.gap = "24px";
 
-conteiner.append(...createMarcup(arr))
-
-// console.log(arr);
+conteiner.insertAdjacentHTML("beforeend", createMarcup(images))

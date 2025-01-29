@@ -12,3 +12,15 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
