@@ -38,15 +38,13 @@ function createMarcup(images) {
   return images.map ((images) => `
   <li class = "img-gallery">
   <img src = "${images.url}" 
-  alt = "${images.alt}"
-  width = "360px"
-  heigth = "300px" />
+  alt = "${images.alt}" />
   </li>
   `).join("");
 }
 
 conteiner.style.display = "flex";
 conteiner.style.flexWrap = "wrap";
-conteiner.style.gap = "24px";
+conteiner.style.gap = "48px 24px";
 
 conteiner.insertAdjacentHTML("beforeend", createMarcup(images))
