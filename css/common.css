@@ -25,3 +25,20 @@ img {
     width: 360px;
     height: 300px;
 }
+
+.login-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.login-form-lab {
+  margin: 0;
+}
+
+.login-form-btn {
+  margin-top: 16px;
+}
